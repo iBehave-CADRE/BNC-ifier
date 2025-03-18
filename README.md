@@ -10,8 +10,8 @@ You can find the pin numbering of your camera by going to the image your camera 
 1. Connect the camera pin with number (row) to the corresponding pin of the BNC-ifier Box (column).
 2. Unscrew the top of the BNC-ifier and open the lid.
 3. You can see multiple pin headers. There is a pin header for each line. It selects what ground to use for the pin. Please set them to the corresponding ground found in the table for each line.
-	> [!TIP]
-	> If there is no ground (GND) for the line in the table it does not matter how the pin header is set.
+> [!TIP]
+> If there is no ground (GND) for the line in the table it does not matter how the pin header is set.
 4. If you want to connect more cameras to a trigger signal you can select which line gets send to the output of the BNC-ifier via the pin header at the output. Please also select the corresponding ground. It should be the same as the line you selected.
 5. Place the lid back on the BNC-ifier and screw it on.
 
