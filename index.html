@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNC-ifier</title>
+    <style>
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .search-container {
+            margin: 20px;
+            width: 50%;
+        }
+        .filter-options {
+            margin: 10px 0;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .result-item {
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+        }
+        .camera-stats {
+            width: 50%;
+            visibility: hidden;
+            position: sticky;
+            top: 0;
+            height: fit-content;
+        }
+        table {
+          width: 60%;
+          border-collapse: collapse;
+          margin-right: 20px;
+        }
+        
+        th, td {
+          padding: 10px;
+          border: 1px solid #ddd;
+        }
+        
+        thead {
+          background-color: #f2f2f2;
+        }
+        
+        .image {
+          /*max-width: 300px;*/
+          height: auto;
+          border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search..." onkeyup="filterResults()">
+            <div class="filter-options"></div>
+            <div class="results" id="results"></div>
+        </div>
+    
+        <div class="camera-stats">
+            <h1 id = "camera_heading"></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pin 1</th>
+                        <th>Pin 2</th>
+                        <th>Pin 3</th>
+                        <th>Pin 4</th>
+                        <th>Pin 5</th>
+                        <th>Pin 6</th>
+                        <th>Line 1 GND</th>
+                        <th>Line 2 GND</th>
+                        <th>Line 3 GND</th>
+                        <th>Line 4 GND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <th id = "pin1"></th>
+                    <th id = "pin2"></th>
+                    <th id = "pin3"></th>
+                    <th id = "pin4"></th>
+                    <th id = "pin5"></th>
+                    <th id = "pin6"></th>
+                    <th id = "line_1_gnd"></th>
+                    <th id = "line_2_gnd"></th>
+                    <th id = "line_3_gnd"></th>
+                    <th id = "line_4_gnd"></th>
+                </tbody>
+            </table>
+            <img src="" id = "connector_image" class="image">
+        </div>
+    </div>
+
+    <script>
+let data = [];
+let all_types = [];
+async function fetchCSV(url) {
+    const response = await fetch(url);
+    const csvContent = await response.text();
+    data = parseCSV(csvContent);
+    return data
+}
+
+
+function parseCSV(csvContent) {
+    const rows = csvContent.split("\n");
+    const data = rows.map(row => row.split(","));
+    
+    let cameraTable = [];
+    for (let i = 1; i < data.length-1; i++) {
+        cameraTable.push({ 
+            name: data[i][0],
+            pins: data[i].slice(1, 7),
+            line_gnd: data[i].slice(7, 11),
+            type: data[i][11],
+            pin_image: data[i][12].replace("\r", ""),
+            id: i-1
+        });
+    }
+    return cameraTable;
+}
+
+fetchCSV("cameras.csv")
+    .then(data => {
+        for (let i = 0; i < data.length; i++) {
+            all_types.push(data[i].type);
+        }
+        all_types = [... new Set(all_types)];
+        const filterList = document.getElementsByClassName('filter-options')[0];
+        for (let i = 0; i < all_types.length; i++) {
+            const newFilter = document.createElement('input');
+            newFilter.type = "checkbox";
+            newFilter.id = all_types[i];
+            newFilter.setAttribute("onchange", "filterResults();");
+            filterList.appendChild(newFilter);
+            const newLabel = document.createElement('label');
+            newLabel.setAttribute("for", all_types[i]);
+            newLabel.textContent = all_types[i];
+            filterList.appendChild(newLabel);
+        }
+        displayResults(data);
+    });
+
+function filterResults() {
+    const searchTerm = document.getElementById("searchBar").value.toLowerCase();
+    const typeChecked = [];
+    for (let i = 0; i < all_types.length; i++) {
+        typeChecked.push(document.getElementById(all_types[i]).checked);
+    }
+
+    let filteredData = data;
+
+    filteredData = filteredData.filter(item => item.name.toLowerCase().includes(searchTerm));
+
+    for (let i = 0; i < all_types.length; i++) {
+        if (typeChecked[i]) {
+            filteredData = filteredData.filter(item => item.type === all_types[i]);
+        }
+    }
+
+    displayResults(filteredData);
+}
+
+function showCameraStats(camera_id) {
+    const camera = data[camera_id];
+    document.getElementById("camera_heading").innerText = camera.name;
+    for (let i = 0; i < 6; i++) {
+        document.getElementById("pin" + (i+1)).innerText = camera.pins[i];
+    }
+    for (let i = 0; i < 4; i++) {
+        document.getElementById("line_" + (i+1) + "_gnd").innerText = camera.line_gnd[i];
+    }
+    document.getElementById("connector_image").src = "https://raw.githubusercontent.com/iBehave-CADRE/BNC-ifier/7663e44bd09024d5c73825407c6009dde5b0a489/pin_images/" + camera.pin_image + ".svg"
+    document.getElementsByClassName("camera-stats")[0].style.visibility = "visible";
+}
+
+function displayResults(filteredData) {
+    const resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = '';
+
+    if (filteredData.length === 0) {
+        resultsContainer.innerHTML = '<p>No results found</p>';
+        return;
+    }
+
+    filteredData.forEach(item => {
+        const resultItem = document.createElement('div');
+        resultItem.classList.add('result-item');
+        resultItem.textContent = item.name;
+        resultItem.setAttribute("onclick", "showCameraStats(" + item.id + ");");
+        resultsContainer.appendChild(resultItem);
+    });
+}
+
+    </script>
+</body>
+</html>
