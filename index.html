@@ -52,10 +52,13 @@
           height: auto;
           border-radius: 8px;
         }
+        a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
         <div class="search-container">
             <input type="text" id="searchBar" placeholder="Search..." onkeyup="filterResults()">
@@ -64,7 +67,7 @@
         </div>
     
         <div class="camera-stats">
-            <h1 id = "camera_heading"></h1>
+            <h1><a href=# id = "camera_heading"></a></h1>
             <table>
                 <thead>
                     <tr>
@@ -170,6 +173,7 @@ function filterResults() {
 function showCameraStats(camera_id) {
     const camera = data[camera_id];
     document.getElementById("camera_heading").innerText = camera.name;
+    document.getElementById("camera_heading").href = "https://docs.baslerweb.com/" + camera.name.toLowerCase();
     for (let i = 0; i < 6; i++) {
         document.getElementById("pin" + (i+1)).innerText = camera.pins[i];
     }
