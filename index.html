@@ -104,6 +104,7 @@
     <script>
 let data = [];
 let all_types = [];
+
 async function fetchCSV(url) {
     const response = await fetch(url);
     const csvContent = await response.text();
@@ -132,10 +133,13 @@ function parseCSV(csvContent) {
 
 fetchCSV("cameras.csv")
     .then(data => {
-        for (let i = 0; i < data.length; i++) {
-            all_types.push(data[i].type);
-        }
+        // Get all types from the camera data
+        for (let i = 0; i < data.length; i++) { all_types.push(data[i].type); }
+
+        // Filter for unique
         all_types = [... new Set(all_types)];
+
+        // Create and fill filter checkboxes
         const filterList = document.getElementsByClassName('filter-options')[0];
         for (let i = 0; i < all_types.length; i++) {
             const newFilter = document.createElement('input');
@@ -152,18 +156,15 @@ fetchCSV("cameras.csv")
     });
 
 function filterResults() {
-    const searchTerm = document.getElementById("searchBar").value.toLowerCase();
-    const typeChecked = [];
-    for (let i = 0; i < all_types.length; i++) {
-        typeChecked.push(document.getElementById(all_types[i]).checked);
-    }
-
     let filteredData = data;
 
+    // Filter by search term
+    const searchTerm = document.getElementById("searchBar").value.toLowerCase();
     filteredData = filteredData.filter(item => item.name.toLowerCase().includes(searchTerm));
 
+    // Apply filters
     for (let i = 0; i < all_types.length; i++) {
-        if (typeChecked[i]) {
+        if (document.getElementById(all_types[i]).checked) {
             filteredData = filteredData.filter(item => item.type === all_types[i]);
         }
     }
@@ -173,20 +174,26 @@ function filterResults() {
 
 function showCameraStats(camera_id) {
     const camera = data[camera_id];
+
+    // Fill heading
     document.getElementById("camera_heading").innerText = camera.name;
     document.getElementById("camera_heading").href = "https://docs.baslerweb.com/" + camera.name.toLowerCase();
-    for (let i = 0; i < 6; i++) {
-        document.getElementById("pin" + (i+1)).innerText = camera.pins[i];
-    }
-    for (let i = 0; i < 4; i++) {
-        document.getElementById("line_" + (i+1) + "_gnd").innerText = camera.line_gnd[i];
-    }
+
+    // Fill table
+    for (let i = 0; i < 6; i++) { document.getElementById("pin" + (i+1)).innerText = camera.pins[i]; }
+    for (let i = 0; i < 4; i++) { document.getElementById("line_" + (i+1) + "_gnd").innerText = camera.line_gnd[i]; }
+
+    // Fill image
     document.getElementById("connector_image").src = "https://raw.githubusercontent.com/iBehave-CADRE/BNC-ifier/7663e44bd09024d5c73825407c6009dde5b0a489/pin_images/" + camera.pin_image + ".svg"
+    
+    // Make section visible
     document.getElementsByClassName("camera-stats")[0].style.visibility = "visible";
 }
 
 function displayResults(filteredData) {
     const resultsContainer = document.getElementById("results");
+
+    // Clear prior results
     resultsContainer.innerHTML = '';
 
     if (filteredData.length === 0) {
@@ -194,6 +201,7 @@ function displayResults(filteredData) {
         return;
     }
 
+    // Add result items
     filteredData.forEach(item => {
         const resultItem = document.createElement('div');
         resultItem.classList.add('result-item');
@@ -202,7 +210,6 @@ function displayResults(filteredData) {
         resultsContainer.appendChild(resultItem);
     });
 }
-
     </script>
 </body>
 </html>
