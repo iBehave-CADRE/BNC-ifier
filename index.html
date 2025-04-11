@@ -34,9 +34,10 @@
             height: fit-content;
         }
         table {
-          width: 60%;
+          /*width: 60%;*/
           border-collapse: collapse;
-          margin-right: 20px;
+          margin: auto;
+          margin-bottom: 20px;
         }
         
         th, td {
@@ -57,6 +58,9 @@
             text-decoration: none;
             color: black;
         }
+        h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -70,14 +74,31 @@
         <div class="camera-stats">
             <h1><a href=# id = "camera_heading"></a></h1>
             <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <th>BNC-ifier Pin</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                    </tr>
+                    <tr>
+                        <th>Camera Pin</th>
+                        <th id = "pin1"></th>
+                        <th id = "pin2"></th>
+                        <th id = "pin3"></th>
+                        <th id = "pin4"></th>
+                        <th id = "pin5"></th>
+                        <th id = "pin6"></th>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
                 <thead>
                     <tr>
-                        <th>Pin 1</th>
-                        <th>Pin 2</th>
-                        <th>Pin 3</th>
-                        <th>Pin 4</th>
-                        <th>Pin 5</th>
-                        <th>Pin 6</th>
                         <th>Line 1 GND</th>
                         <th>Line 2 GND</th>
                         <th>Line 3 GND</th>
@@ -85,12 +106,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <th id = "pin1"></th>
-                    <th id = "pin2"></th>
-                    <th id = "pin3"></th>
-                    <th id = "pin4"></th>
-                    <th id = "pin5"></th>
-                    <th id = "pin6"></th>
                     <th id = "line_1_gnd"></th>
                     <th id = "line_2_gnd"></th>
                     <th id = "line_3_gnd"></th>
