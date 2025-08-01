@@ -61,8 +61,8 @@ Wiring Diagram
 PCB Layout
 --------------------
 <p align="center">
-  <img src="./images/PCB_top.png" height="250">
-  <img src="./images/PCB_bottom.png" height="250">
+  <img src="./images/PCB_Top.png" height="250">
+  <img src="./images/PCB_Bottom.png" height="250">
 </p>
 
 
