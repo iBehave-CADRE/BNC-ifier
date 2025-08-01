@@ -36,13 +36,14 @@ To find which pins of the connector correspond to which open pin on the other en
 
 | Item | Quantity | Notes | Product Example Link |
 | :---: | :---: | :---: | :---: |
+| Custom BNC-ifier PCB | 1 piece | [custom design](PCB) | [eurocircuits.com](https://www.eurocircuits.com/) |
 | Phoenix Contact DFK-MC 1.5/ 6-GF-3.81 | 1 piece | ||
 | Phoenix Contact MC 1.5/ 6-STF-3.81 | 1 piece |||
 | Amphenol RF BNC Connector 031-5431-10RFX | 5 pieces |||
 | Renkforce Jumper Cable JKFF403 | 6 pieces |||
 | Jumper Bridge | 6 pieces |||
 | Male Pin Header | 29 pieces |||
-| Custom BNC-ifier PCB | 1 piece |||
+
 
 shrink tube
 
