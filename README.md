@@ -31,3 +31,22 @@ To find which pins of the connector correspond to which open pin on the other en
 
 > [!TIP]
 > Some pins might be unconnected.
+
+## Commercial Parts List
+
+| Item | Quantity | Notes | Product Example Link |
+| :---: | :---: | :---: | :---: |
+
+## Stackable Case Parts
+
+| Item | Quantity | Notes | Product Example Link |
+| :---: | :---: | :---: | :---: |
+
+## Rack Mounting Case Parts
+
+| Item | Quantity | Notes | Product Example Link |
+| :---: | :---: | :---: | :---: |
+
+
+
+
