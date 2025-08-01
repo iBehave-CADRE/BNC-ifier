@@ -49,4 +49,10 @@ To find which pins of the connector correspond to which open pin on the other en
 
 
 
+Wiring Diagram
+--------------------
+
+<p align="center">
+  <img src="./Images/Wiring_Diagram.png" width="800">
+</p>
 
