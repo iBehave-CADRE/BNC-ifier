@@ -53,7 +53,7 @@ Wiring Diagram
 --------------------
 
 <p align="center">
-  <img src="./Images/Wiring_Diagram.png" width="800">
+  <img src="./images/Wiring_Diagram.png" width="800">
 </p>
 
 
