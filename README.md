@@ -36,6 +36,15 @@ To find which pins of the connector correspond to which open pin on the other en
 
 | Item | Quantity | Notes | Product Example Link |
 | :---: | :---: | :---: | :---: |
+| Phoenix Contact DFK-MC 1.5/ 6-GF-3.81 | 1 piece | ||
+| Phoenix Contact MC 1.5/ 6-STF-3.81 | 1 piece |||
+| Amphenol RF BNC Connector 031-5431-10RFX | 5 pieces |||
+| Renkforce Jumper Cable JKFF403 | 6 pieces |||
+| Jumper Bridge | 6 pieces |||
+| Male Pin Header | 29 pieces |||
+| Custom BNC-ifier PCB | 1 piece |||
+
+shrink tube
 
 ## Stackable Case Parts
 
@@ -47,7 +56,11 @@ To find which pins of the connector correspond to which open pin on the other en
 | Item | Quantity | Notes | Product Example Link |
 | :---: | :---: | :---: | :---: |
 
+Parts List:
 
+1x 3D Printed Case
+1x Lasercut / 3D Printed Lid for Stacking
+1x 3D Printed Lid for Rack Mounting
 
 Wiring Diagram
 --------------------
@@ -65,8 +78,3 @@ PCB Layout
   <img src="./images/PCB_Bottom.png" height="250">
 </p>
 
-
-
-
-
-More to come
