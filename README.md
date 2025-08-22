@@ -12,7 +12,13 @@ assembly instructions
 
 ## Assembly
 
-Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering station, the PCB and commercial parts. Everything can be found in our maker space but is also available online. The we keep some copies of the PCB on stock and it can be requested if needed. But we also provide help with sourcing the parts otherwise.
+For assembling the BNC-fier access to a 3D printer, a lasercutter and a soldering station are recomended. The PCB can be obtained in the CADRE Maker Space or ordered via any online manufacturer for PCBs. The commercial parts can be ordered online if not available in the CADRE Maker Space. We also provide support for sourcing all the parts and keep them on stock if possible.
+
+All electronics parts have to be soldered to the top side of the PCB at the labelled position. The green Phoenix Contact connector has to be soldered to female jumper cables and finished with a shrink tube.
+
+Printing cutting, assemlbly adding jumper bridges and cable connections.
+
+Closing the lid and rack mounting
 
 ### Parts List
 
@@ -42,20 +48,13 @@ Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering 
 | Top Lid Stackable | 1 piece | [custom design](Case/Top_Lid_Stackable.stl) | lasercut, can be printed |
 | Stacking Feet | 4 pieces | [custom design](Case/Stacking_Feet.stl) | 3D printed |
 |  |  |  |  |
-
-|  |  |  |  |
-| :--- | :---: | :---: | :---: |
 | **Parts for Rack Mounting Case:** |
+|  |  |  |  |
 | Rack Mounting Case Top Back | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Back.stl) | 3D printed |
 | Rack Mounting Case Top Front | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Front.stl) | 3D printed |
 | Rack Panel | 1 piece | [custom design](Case/Rack_Panel.stl) | lasercut |
 
 **Table 1:** Parts list for building BNC-fier either as stackable device or for mounting in a 19 inch rack.
-
-| Alice | Reddit   | Twitter     |
-| ----- | -------- | ----------- |
-| Alice | u/alice  | @alice      |
-|       | /r/pizza | @ilovepizza |
 
 ## Usage
 
@@ -115,3 +114,5 @@ PCB Layout
 ## References
 
 The BNC-ifier is used by the Laboratories of Sabine Krabbe (DZNE, Bonn), Tobias Rose (IEECR, Bonn), Tobias Ackels (IEECR, Bonn), Ilona Grunwald-Kadow (Institute for Physiology, Bonn) and many more to come...
+
+For any further questions please contact the [CADRE Team](https://ibehave.nrw/ibots-platform/cadre/)
