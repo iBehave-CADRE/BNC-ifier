@@ -42,8 +42,10 @@ Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering 
 | Top Lid Stackable | 1 piece | [custom design](Case/Top_Lid_Stackable.stl) | lasercut, can be printed |
 | Stacking Feet | 4 pieces | [custom design](Case/Stacking_Feet.stl) | 3D printed |
 |  |  |  |  |
-| **Parts for Rack Mounting Case:** |
+
 |  |  |  |  |
+| :--- | :---: | :---: | :---: |
+| **Parts for Rack Mounting Case:** |
 | Rack Mounting Case Top Back | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Back.stl) | 3D printed |
 | Rack Mounting Case Top Front | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Front.stl) | 3D printed |
 | Rack Panel | 1 piece | [custom design](Case/Rack_Panel.stl) | lasercut |
