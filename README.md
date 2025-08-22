@@ -40,6 +40,8 @@ Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering 
 | Rack Mounting Case Top Front | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Front.stl) | 3D printed |
 | Rack Panel | 1 piece | [custom design](Case/Rack_Panel.stl) | lasercut |
 
+**Table 1:** Parts list for building BNC-fier either as stackable device or for mounting in a 19 inch rack.
+
 
 ## Usage
 
