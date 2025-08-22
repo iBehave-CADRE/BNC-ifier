@@ -15,16 +15,21 @@ Using this device allows to synchronize the Basler camera with microscopes, DAQs
   <img src="./images/Example_Implementation.png" height="250">
 </p>
 
-**Figure 2:** Schematic of exemplary implementation of the BNC-ifier. Here, a 2p-Microscope Frame Trigger is connected to Line 1 to trigger individual frames of the Basler Camera. At the same time, the Sych Port is connected to a DAQ for data logging and time stamps.
+  **Figure 2:** Schematic of exemplary implementation of the BNC-ifier. Here, a 2p-Microscope Frame Trigger is connected to Line 1 to trigger individual frames of the Basler Camera. At the same time, the Sych Port is connected to a DAQ for data logging and time stamps. Image of Basler Camera and I/O Cable obtained and adapted from [baslerweb.com](https://www.baslerweb.com/).
 
 - ToDo:
-image of device, stack and rack
-image with scheme of connection to pc and bnc
-assembly instructions
+
+Export assemblz manual from fusion for assembly instructions
 
 ## Assembly
 
 For assembling the BNC-fier access to a 3D printer, a lasercutter and a soldering station are recomended. The PCB can be obtained in the CADRE Maker Space or ordered via any online manufacturer for PCBs. The commercial parts can be ordered online if not available in the CADRE Maker Space. We also provide support for sourcing all the parts and keep them on stock if possible.
+
+<p align="center">
+  <img src="./images/Explosion_Assembly.png" height="400">
+</p>
+
+**Figure 3:** Exploded view of BNC-ifier for assembly instructions.
 
 All electronics parts have to be soldered to the top side of the PCB at the labelled position. The green Phoenix Contact connector has to be soldered to female jumper cables and finished with a shrink tube.
 
