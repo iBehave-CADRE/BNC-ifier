@@ -25,9 +25,32 @@ Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering 
 | Renkforce Jumper Cable JKFF403 | 6 pieces ||[rs-online.com](https://www.conrad.de/de/p/renkforce-jkff403-jumper-kabel-arduino-banana-pi-raspberry-pi-40x-drahtbruecken-buchse-40x-drahtbruecken-buchse-30-2299845.html)|
 | Jumper Bridge | 6 pieces ||[rs-online.com](https://de.rs-online.com/web/p/jumper/7636776P?gb=s)|
 | Male Pin Header | 29 pieces ||[rs-online.com](https://de.rs-online.com/web/p/leiterplatten-header/2518632?gb=s)|
-| Shrink Tube | 16 pieces of 1.5 cm ||[conrad]()|
+| Shrink Tube | 16 pieces of 1.5 cm ||[rs-online.de](https://de.rs-online.com/web/p/warmeschrumpfschlauche/2833249?gb=s)|
 
-8x screws and washers
+
+### Parts for Stackable Case
+
+| Item | Quantity | Notes | Product Example Link |
+| :---: | :---: | :---: | :---: |
+| Case Frame Top | 1 piece | [custom design](Case/Case_Frame_Top.stl) | 3D printed |
+| Case Frame Bottom | 1 piece | [custom design](Case/Case_Frame_Bottom.stl) | 3D printed |
+| Top Lid Stackable | 1 piece | [custom design](Case/Top_Lid_Stackable.stl) | lasercut, can be printed |
+| Stacking Feet | 4 pieces | [custom design](Case/Stacking_Feet.stl) | 3D printed |
+| Screw M3x10 Flathead | 8 pieces | self-tapping|[mercateo.com](https://www.mercateo.com/p/1498C-8000152817/Flachkopfschraube_DIN_85_ISO_1580_Schlitz_M3x10_4_8_galv_verz_200St_.html?ViewName=live~secureMode)|
+| Washer M3 | 8 pieces | |[mercateo.com](https://www.mercateo.com/p/4502-16H900/Unterlegscheibe_M3_H_0_5_mm_Aussen_7_mm_Stahl_verzinkt_DIN_125_ISO_7090_.html?ViewName=live~secureMode)|
+
+
+### Parts for Rack Mounted Case
+
+| Item | Quantity | Notes | Product Example Link |
+| :---: | :---: | :---: | :---: |
+| Case Frame Top | 1 piece | [custom design](Case/Case_Frame_Top.stl) | 3D printed |
+| Case Frame Bottom | 1 piece | [custom design](Case/Case_Frame_Bottom.stl) | 3D printed |
+| Rack Mounting Case Top Back | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Back.stl) | 3D printed |
+| Rack Mounting Case Top Front | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Front.stl) | 3D printed |
+| Rack Panel | 1 piece | [custom design](Case/Rack_Panel.stl) | lasercut |
+| Screw M3x10 Flathead | 8 pieces | self-tapping|[mercateo.com](https://www.mercateo.com/p/1498C-8000152817/Flachkopfschraube_DIN_85_ISO_1580_Schlitz_M3x10_4_8_galv_verz_200St_.html?ViewName=live~secureMode)|
+| Washer M3 | 8 pieces | |[mercateo.com](https://www.mercateo.com/p/4502-16H900/Unterlegscheibe_M3_H_0_5_mm_Aussen_7_mm_Stahl_verzinkt_DIN_125_ISO_7090_.html?ViewName=live~secureMode)|
 
 ## Usage
 
@@ -63,21 +86,9 @@ To find which pins of the connector correspond to which open pin on the other en
 
 
 
-## Stackable Case Parts
 
-| Item | Quantity | Notes | Product Example Link |
-| :---: | :---: | :---: | :---: |
 
-## Rack Mounting Case Parts
 
-| Item | Quantity | Notes | Product Example Link |
-| :---: | :---: | :---: | :---: |
-
-Parts List:
-
-1x 3D Printed Case
-1x Lasercut / 3D Printed Lid for Stacking
-1x 3D Printed Lid for Rack Mounting
 
 Wiring Diagram
 --------------------
