@@ -2,7 +2,20 @@
 
 The BNC-ifier adds BNC connectors to Basler cameras, enabling simple integration into experimental imaging and behavioral setups for neuroscience. The PCB is designed to be accessible for scientists, with thorough documentation for self-assembly. Its modular design and detailed instructions allow users to adapt the PCB for any of the supported Basler cameras. A list of supported cameras with connection instructions can be found [here](https://ibehave-cadre.github.io/BNC-ifier). The BNC-fier can be used as a stackable device or mounted in 19 inch racks.
 
+<p align="center">
+  <img src="./images/BNC-ifier.png" height="250">
+  <img src="./images/BNC-ifier_Top.png" height="250">
+</p>
+
+**Figure 1:** The BNC-ifier (left) and the accessible documentation with partslist, QR code for GitHub and contact details on the PCB (right).
+
 Using this device allows to synchronize the Basler camera with microscopes, DAQs, sensors and actuators via 5V digital pulses. It also allows to daisy-chain basler cameras via the synch port. in order to synchroniye frames between cameras. Also one can grab time stamps from the synch port or one of the many BNC ports, depending on the IO settings.
+
+<p align="center">
+  <img src="./images/Example_Implementation.png" height="250">
+</p>
+
+**Figure 2:** Schematic of exemplary implementation of the BNC-ifier. Here, a 2p-Microscope Frame Trigger is connected to Line 1 to trigger individual frames of the Basler Camera. At the same time, the Sych Port is connected to a DAQ for data logging and time stamps.
 
 - ToDo:
 image of device, stack and rack
@@ -23,6 +36,8 @@ Closing the lid and rack mounting
   <img src="./images/Assembly_Stack.png" height="250">
   <img src="./images/Assembly_Rack.png" height="250">
 </p>
+
+**Figure 2:** BNC-ifier as Stack (left) and mounted in a rack panel (right).
 
 ### Parts List
 
@@ -107,12 +122,16 @@ Wiring Diagram
   <img src="./images/Wiring_Diagram.png" width="800">
 </p>
 
+**Figure 3:** Schematics of electronics circuit of the BNC-fier.
+
 PCB Layout
 --------------------
 <p align="center">
   <img src="./images/PCB_Top.png" height="250">
   <img src="./images/PCB_Bottom.png" height="250">
 </p>
+
+**Figure 4:** PCB layout of the BNC-ifier from top (left) and bottom (right).
 
 ## References
 
