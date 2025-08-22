@@ -1,8 +1,12 @@
 # BNC-ifier User Guide
 
+The BNC-ifier is a device that adds BNC connectors to Basler cameras, enabling easy integration into experimental imaging and behavioral setups. The PCB is designed to be accessible for scientists, with thorough documentation for self-assembly. Its modular design and detailed instructions allow users to adapt the PCB for any of the supported Basler cameras. A list of supported cameras with connection instructions can be found [here](https://ibehave-cadre.github.io/BNC-ifier)
+
+## Assembly
+
 ## Usage
 
-To connect your Basler camera to the BNC-ifier you should have a cable with the connector of your camera on one end and open pins on the other end.
+To connect your Basler camera to the BNC-ifier you should have a I/O cable with the corresponding connector of your camera on one end and open pins on the other end. This cable can be ordered on the Basler web page: [I/O Cables](https://www.baslerweb.com/en/accessories/?accessory_type=I/O+/+Power+Cable#products).
 If you do not know which of the open pins refer to which of the pins of the camera connector, please refer to this [section](#finding-out-the-connections-of-the-cable).
 
 You can find the pin numbering of your camera by going to the image your camera in the pin_numbering folder.
@@ -79,3 +83,7 @@ PCB Layout
   <img src="./images/PCB_Bottom.png" height="250">
 </p>
 
+
+## References
+
+The BNC-ifier is used by the Laboratories of Sabine Krabbe (DZNE, Bonn), Tobias Rose (IEECR, Bonn), Tobias Ackels (IEECR, Bonn), Ilona Grunwald-Kadow (Institute for Physiology, Bonn) and many more to come...
