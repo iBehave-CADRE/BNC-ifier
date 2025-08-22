@@ -19,6 +19,11 @@ Printing cutting, assemlbly adding jumper bridges and cable connections.
 
 Closing the lid and rack mounting
 
+<p align="center">
+  <img src="./images/Assembly_Stack.png" height="250">
+  <img src="./images/Assembly_Rack.png" height="250">
+</p>
+
 ### Parts List
 
 | Item | Quantity | Notes | Product Example Link |
