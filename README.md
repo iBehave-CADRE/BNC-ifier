@@ -17,8 +17,10 @@ Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering 
 ### Parts List
 
 | Item | Quantity | Notes | Product Example Link |
-| :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: |
+|  |  |  |  |
 | **Commercial Parts:** |
+|  |  |  |  |
 | Custom BNC-ifier PCB | 1 piece | [custom design](PCB) | [eurocircuits.com](https://www.eurocircuits.com/) |
 | Phoenix Contact DFK-MC 1.5/ 6-GF-3.81 | 1 piece | |[rs-online.com](https://uk.rs-online.com/web/p/pluggable-terminal-blocks/1761449?gb=s)|
 | Phoenix Contact MC 1.5/ 6-STF-3.81 | 1 piece ||[rs-online.com](https://uk.rs-online.com/web/p/pluggable-terminal-blocks/1703921?gb=s)|
@@ -29,19 +31,29 @@ Needs: access to a 3d printer (optional), a lasercutter (optional), a soldering 
 | Shrink Tube | 16 pieces of 1.5 cm ||[rs-online.de](https://de.rs-online.com/web/p/warmeschrumpfschlauche/2833249?gb=s)|
 | Screw M3x10 Flathead | 8 pieces | self-tapping|[mercateo.com](https://www.mercateo.com/p/1498C-8000152817/Flachkopfschraube_DIN_85_ISO_1580_Schlitz_M3x10_4_8_galv_verz_200St_.html?ViewName=live~secureMode)|
 | Washer M3 | 8 pieces | |[mercateo.com](https://www.mercateo.com/p/4502-16H900/Unterlegscheibe_M3_H_0_5_mm_Aussen_7_mm_Stahl_verzinkt_DIN_125_ISO_7090_.html?ViewName=live~secureMode)|
+|  |  |  |  |
 | **Parts for Case:** |
+|  |  |  |  |
 | Case Frame Top | 1 piece | [custom design](Case/Case_Frame_Top.stl) | 3D printed |
 | Case Frame Bottom | 1 piece | [custom design](Case/Case_Frame_Bottom.stl) | 3D printed |
+|  |  |  |  |
 | **Parts for Stacking Case:** |
+|  |  |  |  |
 | Top Lid Stackable | 1 piece | [custom design](Case/Top_Lid_Stackable.stl) | lasercut, can be printed |
 | Stacking Feet | 4 pieces | [custom design](Case/Stacking_Feet.stl) | 3D printed |
+|  |  |  |  |
 | **Parts for Rack Mounting Case:** |
+|  |  |  |  |
 | Rack Mounting Case Top Back | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Back.stl) | 3D printed |
 | Rack Mounting Case Top Front | 1 piece | [custom design](Case/Rack_Mounting_Case_Top_Front.stl) | 3D printed |
 | Rack Panel | 1 piece | [custom design](Case/Rack_Panel.stl) | lasercut |
 
 **Table 1:** Parts list for building BNC-fier either as stackable device or for mounting in a 19 inch rack.
 
+| Alice | Reddit   | Twitter     |
+| ----- | -------- | ----------- |
+| Alice | u/alice  | @alice      |
+|       | /r/pizza | @ilovepizza |
 
 ## Usage
 
