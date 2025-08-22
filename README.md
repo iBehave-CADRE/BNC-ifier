@@ -1,6 +1,12 @@
 # BNC-ifier User Guide
 
-The BNC-ifier is a device that adds BNC connectors to Basler cameras, enabling easy integration into experimental imaging and behavioral setups. The PCB is designed to be accessible for scientists, with thorough documentation for self-assembly. Its modular design and detailed instructions allow users to adapt the PCB for any of the supported Basler cameras. A list of supported cameras with connection instructions can be found [here](https://ibehave-cadre.github.io/BNC-ifier)
+The BNC-ifier is a device that adds BNC connectors to Basler cameras, enabling easy integration into experimental imaging and behavioral setups. The PCB is designed to be accessible for scientists, with thorough documentation for self-assembly. Its modular design and detailed instructions allow users to adapt the PCB for any of the supported Basler cameras. A list of supported cameras with connection instructions can be found [here](https://ibehave-cadre.github.io/BNC-ifier). The BNC-fier can be used as a stackable device or mounted in 19 inch racks.
+
+- ToDo:
+image of device, stack and rack
+image with scheme of connection to pc and bnc
+order list
+assembly instructions
 
 ## Assembly
 
@@ -38,16 +44,19 @@ To find which pins of the connector correspond to which open pin on the other en
 
 ## Commercial Parts List
 
+
+
 | Item | Quantity | Notes | Product Example Link |
 | :---: | :---: | :---: | :---: |
 | Custom BNC-ifier PCB | 1 piece | [custom design](PCB) | [eurocircuits.com](https://www.eurocircuits.com/) |
-| Phoenix Contact DFK-MC 1.5/ 6-GF-3.81 | 1 piece | ||
-| Phoenix Contact MC 1.5/ 6-STF-3.81 | 1 piece |||
-| Amphenol RF BNC Connector 031-5431-10RFX | 5 pieces |||
-| Renkforce Jumper Cable JKFF403 | 6 pieces |||
-| Jumper Bridge | 6 pieces |||
-| Male Pin Header | 29 pieces |||
+| Phoenix Contact DFK-MC 1.5/ 6-GF-3.81 | 1 piece | https://uk.rs-online.com/web/p/pluggable-terminal-blocks/1761449?gb=s||
+| Phoenix Contact MC 1.5/ 6-STF-3.81 | 1 piece ||[rs-online.com](https://uk.rs-online.com/web/p/pluggable-terminal-blocks/1703921?gb=s)|
+| Amphenol RF BNC Connector 031-5431-10RFX | 5 pieces ||[rs-online.com](https://uk.rs-online.com/web/p/coaxial-connectors/1440890?gb=a)|
+| Renkforce Jumper Cable JKFF403 | 6 pieces ||[rs-online.com](https://www.conrad.de/de/p/renkforce-jkff403-jumper-kabel-arduino-banana-pi-raspberry-pi-40x-drahtbruecken-buchse-40x-drahtbruecken-buchse-30-2299845.html)|
+| Jumper Bridge | 6 pieces ||[rs-online.com](https://de.rs-online.com/web/p/jumper/7636776P?gb=s)|
+| Male Pin Header | 29 pieces ||[rs-online.com](https://de.rs-online.com/web/p/leiterplatten-header/2518632?gb=s)|
 
+The PCB can be picked up in the Maker space or ordered via any online manufacturer. If you need help with sourcing the parts please feel free to stop by or contact us.
 
 shrink tube
 
