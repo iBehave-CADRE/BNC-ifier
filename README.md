@@ -1,13 +1,12 @@
 # BNC-ifier User Guide
 
-The BNC-ifier is a device that adds BNC connectors to Basler cameras, enabling easy integration into experimental imaging and behavioral setups. The PCB is designed to be accessible for scientists, with thorough documentation for self-assembly. Its modular design and detailed instructions allow users to adapt the PCB for any of the supported Basler cameras. A list of supported cameras with connection instructions can be found [here](https://ibehave-cadre.github.io/BNC-ifier). The BNC-fier can be used as a stackable device or mounted in 19 inch racks.
+The BNC-ifier adds BNC connectors to Basler cameras, enabling simple integration into experimental imaging and behavioral setups for neuroscience. The PCB is designed to be accessible for scientists, with thorough documentation for self-assembly. Its modular design and detailed instructions allow users to adapt the PCB for any of the supported Basler cameras. A list of supported cameras with connection instructions can be found [here](https://ibehave-cadre.github.io/BNC-ifier). The BNC-fier can be used as a stackable device or mounted in 19 inch racks.
 
 Using this device allows to synchronize the Basler camera with microscopes, DAQs, sensors and actuators via 5V digital pulses. It also allows to daisy-chain basler cameras via the synch port. in order to synchroniye frames between cameras. Also one can grab time stamps from the synch port or one of the many BNC ports, depending on the IO settings.
 
 - ToDo:
 image of device, stack and rack
 image with scheme of connection to pc and bnc
-order list
 assembly instructions
 
 ## Assembly
@@ -109,7 +108,6 @@ PCB Layout
   <img src="./images/PCB_Top.png" height="250">
   <img src="./images/PCB_Bottom.png" height="250">
 </p>
-
 
 ## References
 
